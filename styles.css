@@ -1,1 +1,100 @@
+:root {
+  --primary: #F24D9A;
+  --bg: #f7f7f7;
+  --card: #ffffff;
+  --muted: #6b7280;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 24px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--bg);
+  color: #111;
+}
+
+nav {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+nav button {
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: none;
+  background: #e5e7eb;
+  cursor: pointer;
+}
+
+nav button.active {
+  background: var(--primary);
+  color: white;
+}
+
+.card {
+  background: var(--card);
+  border-radius: 10px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+h1, h2, h3 { margin: 0 0 12px; }
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-top: 12px;
+}
+
+input, select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+}
+
+button.primary {
+  margin-top: 16px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  background: var(--primary);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td, th {
+  padding: 8px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.right { text-align: right; }
+.muted { color: var(--muted); font-size: 0.9em; }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+  gap: 12px;
+}
+
+.metric {
+  background: #fde7f1;
+  border-radius: 10px;
+  padding: 12px;
+}
+
+.metric strong {
+  display: block;
+  font-size: 1.5em;
+  color: var(--primary);
+}
 
